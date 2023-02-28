@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  sample-next-blog-app:
+    container_name: sample-next-blog-app__container
+    image: node:16
+    ports:
+      - "${APP_PORT:-6000}:3000"
+    volumes:
+      - type: bind
+        source: "./project"
+        target: "/var/www/project"
+    working_dir: "/var/www/project"
+    tty: true

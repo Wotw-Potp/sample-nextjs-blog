@@ -1,0 +1,7 @@
+.c-button {
+  @apply py-4 px-8 flex items-center justify-center gap-x-7 rounded shadow-md bg-orange text-white font-bold transition-all duration-300 hover:opacity-80 hover:shadow-none;
+
+  &.--blue {
+    @apply bg-paleblue;
+  }
+}

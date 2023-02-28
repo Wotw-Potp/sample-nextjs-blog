@@ -1,0 +1,9 @@
+.c-heading {
+  &.c-heading-section {
+    @apply text-4xl font-title font-semibold relative z-1 text-center py-5 mb-10;
+    &:after {
+      content: "";
+      @apply w-16 h-[2px] block absolute z-0 bg-paleblue left-0 right-0 bottom-0 m-auto;
+    }
+  }
+}
